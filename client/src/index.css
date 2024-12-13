@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your global CSS file (e.g., src/index.css) */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px #a3f461, 0 0 10px #ff0000, 0 0 15px #bfd446, 0 0 20px #9ce445;
+    color: #ff0000;
+  }
+ 
+  100% {
+    text-shadow: 0 0 5px #9199ce, 0 0 10px #0b0337, 0 0 15px #060237, 0 0 20px #515067;
+    color: #1b012c;
+  }
+}
+
+.text-shadow-md {
+  text-shadow: 2px 2px 4px rgba(63, 224, 46, 0.3);
+}
+
+.animate-text-glow {
+  animation: text-glow 1.5s infinite alternate;
+}
+
+
